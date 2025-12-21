@@ -28,370 +28,220 @@
   <link href="assets/css/main.css" rel="stylesheet">
 
 </head>
+<body>
+  <div class="bg-animation"></div>
 
-<body class="index-page">
-
-  <header id="header" class="header dark-background d-flex flex-column">
-    <i class="header-toggle d-xl-none bi bi-list"></i>
-
-    <div class="profile-img">
-      <img src="assets/img/my-profile-img.png" alt="My Image" class="img-fluid rounded-circle">
-    </div>
-
-    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
-      <!-- Uncomment the line below if you also wish to use an image logo -->
-      <!-- <img src="assets/img/logo.png" alt=""> -->
-      <h1 class="sitename">Bavisetti Daniel</h1>
-    </a>
-
-    <div class="social-links text-center">
-      <a href="#services" class="twitter"><i class="bi bi-bar-chart"></i></a>
-      <a href="tel:9121592164" class="facebook"><i class="bi bi-telephone"></i></a>
-      <!-- <a href="https://www.instagram.com/Daniel____Joy/" class="instagram"><i class="bi bi-instagram"></i></a> -->
-      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=daniel.bavisetti0579@gmail.com" target="_blank" class="google-plus"><i class="bi bi-envelope"></i></a>
-      <a href="https://www.linkedin.com/in/daniel-bavisetti/" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
-    </div>
-
-    <nav id="navmenu" class="navmenu">
-      <ul>
-        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
-        <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
-        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
-        <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Links</a></li>
-        <!-- <li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-          <ul>
-            <li><a href="#">Dropdown 1</a></li>
-            <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-              <ul>
-                <li><a href="#">Deep Dropdown 1</a></li>
-                <li><a href="#">Deep Dropdown 2</a></li>
-                <li><a href="#">Deep Dropdown 3</a></li>
-                <li><a href="#">Deep Dropdown 4</a></li>
-                <li><a href="#">Deep Dropdown 5</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Dropdown 2</a></li>
-            <li><a href="#">Dropdown 3</a></li>
-            <li><a href="#">Dropdown 4</a></li>
-          </ul>
-        </li> -->
-        <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+  <nav>
+    <div class="nav-container">
+      <div class="logo">Bavisetti Daniel</div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#links">Links</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
-    </nav>
+      <button class="mobile-toggle" onclick="toggleMenu()">☰</button>
+    </div>
+  </nav>
 
-  </header>
-
-  <main class="main">
-
-    <!-- Hero Section -->
-    <section id="hero" class="hero section dark-background">
-
-      <img src="assets/img/hero_bg.jpg" alt="" data-aos="fade-in" class="">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <h2>Bavisetti Daniel</h2>
-        <p>I'm <span class="typed" data-typed-items="Data Scientist, Developer, ">ML Engineer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
-      </div>
-      
-
-    </section><!-- /Hero Section -->
-
-    <!-- About Section -->
-    <section id="about" class="about section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>About</h2>
-        <p>Passionate and curious developer with a strong interest in AI, data, and backend systems.
-I enjoy building smart, real-world solutions that solve problems efficiently and elegantly.</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4 justify-content-center">
-          <div class="col-lg-4">
-            <img src="assets/img/my-profile-img.png" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-8 content">
-            <h2>AI &amp; ML Developer</h2>
-            <!-- <p class="fst-italic py-3">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
-            </p> -->
-            <div class="row">
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>29 Oct 2003</span></li>
-                  <!-- <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>https://daniel-bavisetti.github.io/Daniel_Bavisetti/</span></li> -->
-                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <a href="tel:9121592164"><span>9121592164</span></a></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Rajahmundry, India</span></li>
-                </ul>
-              </div>
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>22</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Qualification:</strong> <span>BTech(Hons)CSE</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>daniel.bavisetti0579@gmail.com</span></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-    </section><!-- /About Section -->
-
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills section light-background">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Skills</h2>
-      </div><!-- End Section Title -->
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-    <div class="skill-category">
-      <h3>Machine Learning & Deep Learning</h3>
-      <div class="skill-list">
-        <div class="skill">Model Development</div>
-        <div class="skill">Hyperparameter Tuning</div>
-        <div class="skill">Regression & Classification</div>
-        <div class="skill">CNNs</div>
-        <div class="skill">RNNs</div>
-        <div class="skill">Transformers</div>
-        <div class="skill">YOLO</div>
-        <div class="skill">Model Deployment (Edge/Cloud)</div>
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Bavisetti Daniel</h1>
+      <div class="subtitle">ML Engineer | Data Scientist | Developer</div>
+      <p>Passionate developer with a strong interest in AI, data, and backend systems. Building smart, real-world solutions that solve problems efficiently and elegantly.</p>
+      <div class="social-links">
+        <a href="tel:9121592164" title="Phone">📞</a>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=daniel.bavisetti0579@gmail.com" target="_blank" title="Email">✉️</a>
+        <a href="https://www.linkedin.com/in/daniel-bavisetti/" target="_blank" title="LinkedIn">💼</a>
+        <a href="https://github.com/Daniel-Bavisetti/" target="_blank" title="GitHub">🔗</a>
       </div>
     </div>
+  </section>
 
-    <div class="skill-category">
-      <h3>Programming & Frameworks</h3>
-      <div class="skill-list">
-        <div class="skill">Python</div>
-        <div class="skill">C++</div>
-        <div class="skill">SQL</div>
-        <div class="skill">TensorFlow</div>
-        <div class="skill">PyTorch</div>
-        <div class="skill">Scikit-learn</div>
-        <div class="skill">OpenCV</div>
-        <div class="skill">Flask</div>
-        <div class="skill">FastAPI</div>
+  <section id="about">
+    <h2 class="section-title">About Me</h2>
+    <div class="about-container">
+      <div class="profile-img">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Crect fill='%230f172a' width='400' height='400'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='%233b82f6' font-size='80' font-family='Arial'%3EDB%3C/text%3E%3C/svg%3E" alt="Bavisetti Daniel">
+      </div>
+      <div class="about-content">
+        <h3>AI & ML Developer</h3>
+        <p>Machine Learning Engineer skilled in developing, optimizing, and deploying ML models for real-world applications. Proficient in Python, TensorFlow, and PyTorch, with a strong foundation in deep learning, computer vision, and software engineering.</p>
+        <div class="info-grid">
+          <div class="info-item">
+            <strong>Birthday</strong>
+            29 Oct 2003
+          </div>
+          <div class="info-item">
+            <strong>Age</strong>
+            22
+          </div>
+          <div class="info-item">
+            <strong>Phone</strong>
+            <a href="tel:9121592164">9121592164</a>
+          </div>
+          <div class="info-item">
+            <strong>Qualification</strong>
+            BTech (Hons) CSE
+          </div>
+          <div class="info-item">
+            <strong>City</strong>
+            Rajahmundry, India
+          </div>
+          <div class="info-item">
+            <strong>Email</strong>
+            daniel.bavisetti0579@gmail.com
+          </div>
+        </div>
       </div>
     </div>
+  </section>
 
-    <div class="skill-category">
-      <h3>MLOps & Tools</h3>
-      <div class="skill-list">
-        <div class="skill">Docker</div>
-        <div class="skill">Kubernetes</div>
-        <div class="skill">MLflow</div>
-        <div class="skill">Git</div>
-        <div class="skill">REST APIs</div>
-        <div class="skill">AWS</div>
-        <div class="skill">GCP</div>
+  <section id="skills">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-category">
+        <h3>Machine Learning & Deep Learning</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Model Development</span>
+          <span class="skill-tag">Hyperparameter Tuning</span>
+          <span class="skill-tag">Regression & Classification</span>
+          <span class="skill-tag">CNNs</span>
+          <span class="skill-tag">RNNs</span>
+          <span class="skill-tag">Transformers</span>
+          <span class="skill-tag">YOLO</span>
+          <span class="skill-tag">Model Deployment</span>
+        </div>
+      </div>
+      <div class="skill-category">
+        <h3>Programming & Frameworks</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">C++</span>
+          <span class="skill-tag">SQL</span>
+          <span class="skill-tag">TensorFlow</span>
+          <span class="skill-tag">PyTorch</span>
+          <span class="skill-tag">Scikit-learn</span>
+          <span class="skill-tag">OpenCV</span>
+          <span class="skill-tag">Flask</span>
+          <span class="skill-tag">FastAPI</span>
+        </div>
+      </div>
+      <div class="skill-category">
+        <h3>MLOps & Tools</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Docker</span>
+          <span class="skill-tag">Kubernetes</span>
+          <span class="skill-tag">MLflow</span>
+          <span class="skill-tag">Git</span>
+          <span class="skill-tag">REST APIs</span>
+          <span class="skill-tag">AWS</span>
+          <span class="skill-tag">GCP</span>
+        </div>
+      </div>
+      <div class="skill-category">
+        <h3>Data & Visualization</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Pandas</span>
+          <span class="skill-tag">NumPy</span>
+          <span class="skill-tag">Power BI</span>
+          <span class="skill-tag">Tableau</span>
+          <span class="skill-tag">Matplotlib</span>
+          <span class="skill-tag">Seaborn</span>
+        </div>
       </div>
     </div>
+  </section>
 
-    <div class="skill-category">
-      <h3>Data & Visualization</h3>
-      <div class="skill-list">
-        <div class="skill">Pandas</div>
-        <div class="skill">NumPy</div>
-        <div class="skill">Power BI</div>
-        <div class="skill">Tableau</div>
-        <div class="skill">Matplotlib</div>
-        <div class="skill">Seaborn</div>
-      </div>
-    </div>
-  </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section><!-- /Skills Section -->
-
-    <!-- Resume Section -->
-    <section id="resume" class="resume section">
-
-      <!-- Section Title -->
-       <div class="container section-title" data-aos="fade-up">
-        <h2>Resume</h2><div class="mockup-container">
-          <a href="https://drive.google.com/uc?export=download&id=1YV2-aIi_iUuKmIl474Cd4BjDEclVXs2i" download><span>Download</span><span>PDF</span></a>
-        </div>
-        </div>
-
-      <div class="container">
-        <div class="row">
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-
-            <div class="resume-item pb-0">
-              <h4>Professional summary</h4>
-              <p><em>Machine Learning Engineer skilled in developing, optimizing, and deploying ML models for real-world applications. Proficient in Python, TensorFlow, and PyTorch, with a strong foundation in deep learning, computer vision, and software engineering.</em></p>
-            </div><!-- End Resume Item -->
-
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>B.Tech in Computer Science and Engineering (Hons.)</h4>
-              <h5>2021 - 2025</h5>
-              <p><em>XIM University, Bhubaneswar</em></p>
-              <p>Courses: ML, DL & NLP, AI, Data Science, Software Engineering, Big Data, Web Tech, Blockchain, etc.<br>CGPA: 7.71 | Class 12: 94.1% | Class 10: 9.7 GPA</p>
-            </div><!-- End Resume Item -->
-          </div>
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <h3 class="resume-title"> Experience</h3>
-            <div class="resume-item">
-              <h4>Research Intern</h4>
-              <h5>May 2024 - July 2024</h5>
-              <p><em>NIT Rourkela, India</em></p>
-              <ul>
-                <li>Designed and deployed an IoT-based Smart Parking System with real-time vehicle detection and license plate recognition.</li>
-                <li>Trained and optimized a custom YOLO-based object detection model with 95%+ accuracy in dynamic environments.</li>
-                <li>Built a real-time multi-vehicle tracking pipeline and integrated server-side communication for scalable data transmission.</li>
-              </ul>
-            </div><!-- End Resume Item -->
-          </div>
-
-  </div>
-</div>
-
-    </section><!-- /Resume Section -->
-
+  <section id="experience">
+    <h2 class="section-title">Experience & Education</h2>
     
-    <!-- Services Section -->
-    <section id="services" class="services section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Links</h2>
-        <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon flex-shrink-0"><i class="bi bi-briefcase"></i></div>
-            <div>
-              <h4 class="title"><a href="https://www.codechef.com/users/daniel_b" target="_blank" class="stretched-link">CodeChef</a></h4>
-              <p class="description"> 2 Star rated</p>
-            </div>
-          </div>
-          <!-- End Service Item -->
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon flex-shrink-0"><i class="bi bi-card-checklist"></i></div>
-            <div>
-              <h4 class="title"><a href="https://leetcode.com/u/Daniel_Bavisetti/" target="_blank" class="stretched-link">LeetCode</a></h4>
-              <p class="description">Contest Rating - 1729 </p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
-            <div class="icon flex-shrink-0"><i class="bi bi-bar-chart"></i></div>
-            <div>
-              <h4 class="title"><a href="https://codeforces.com/profile/DanielBavisetti" target="_blank" class="stretched-link">Codeforces</a></h4>
-              <p class="description">Contest rating: 436</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
-            <div class="icon flex-shrink-0"><i class="bi bi-binoculars"></i></div>
-            <div>
-              <h4 class="title"><a href="https://www.hackerrank.com/profile/daniel_bavisett1" target="_blank" class="stretched-link">HackerRank</a></h4>
-              <p class="description">1259 - Hackos</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
-            <div class="icon flex-shrink-0"><i class="bi bi-brightness-high"></i></div>
-            <div>
-              <h4 class="title"><a href="https://www.geeksforgeeks.org/user/danielbavisetti0579/" target="_blank" class="stretched-link">GeekforGeeks</a></h4>
-              <p class="description">Geek</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
-            <div class="icon flex-shrink-0"><i class="bi bi-calendar4-week"></i></div>
-            <div>
-              <h4 class="title"><a href="https://github.com/Daniel-Bavisetti/" target="_blank" class="stretched-link">Github</a></h4>
-              <p class="description"> Mutliple projects</p>
-            </div>
-          </div><!-- End Service Item -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Services Section -->
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-5">
-
-            <div class="info-wrap">
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
-                <i class="bi bi-geo-alt flex-shrink-0"></i>
-                <div>
-                  <h3>Address</h3>
-                  <p>Rajahmundry,Andhra Pradesh, India</p>
-                </div>
-              </div><!-- End Info Item -->
-
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
-                <i class="bi bi-telephone flex-shrink-0"></i>
-                <div>
-                  <h3>Call Us</h3>
-                  <p>9121592164</p>
-                </div>
-              </div><!-- End Info Item -->
-
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-                <i class="bi bi-envelope flex-shrink-0"></i>
-                <div>
-                  <h3>Email Us</h3>
-                  <p>daniel.bavisetti0579@gmail.com</p>
-                </div>
-              </div><!-- End Info Item -->
-
-                    </div>
-          </div>
-
-          <!-- End Contact Form -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Contact Section -->
-
-  </main>
-
-  <footer id="footer" class="footer position-relative light-background">
-
-    <div class="container">
-      <div class="copyright text-center ">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">Daniel Bavisetti</strong> <span>All Rights Reserved</span></p>
-      </div>
+    <div class="experience-card">
+      <h3>Research Intern</h3>
+      <div class="date">May 2024 - July 2024</div>
+      <div class="company">NIT Rourkela, India</div>
+      <ul>
+        <li>Designed and deployed an IoT-based Smart Parking System with real-time vehicle detection and license plate recognition</li>
+        <li>Trained and optimized a custom YOLO-based object detection model with 95%+ accuracy in dynamic environments</li>
+        <li>Built a real-time multi-vehicle tracking pipeline and integrated server-side communication for scalable data transmission</li>
+      </ul>
     </div>
 
-  </footer>
+    <div class="experience-card">
+      <h3>B.Tech in Computer Science and Engineering (Hons.)</h3>
+      <div class="date">2021 - 2025</div>
+      <div class="company">XIM University, Bhubaneswar</div>
+      <ul>
+        <li>Courses: ML, DL & NLP, AI, Data Science, Software Engineering, Big Data, Web Tech, Blockchain, etc.</li>
+        <li>CGPA: 7.71 | Class 12: 94.1% | Class 10: 9.7 GPA</li>
+      </ul>
+    </div>
 
+    <a href="https://drive.google.com/uc?export=download&id=1YV2-aIi_iUuKmIl474Cd4BjDEclVXs2i" class="download-btn">📥 Download Resume PDF</a>
+  </section>
+
+  <section id="links">
+    <h2 class="section-title">Coding Profiles</h2>
+    <div class="links-grid">
+      <a href="https://www.codechef.com/users/daniel_b" target="_blank" class="link-card">
+        <div class="link-icon">💼</div>
+        <h3>CodeChef</h3>
+        <p>2 Star Rated</p>
+      </a>
+      <a href="https://leetcode.com/u/Daniel_Bavisetti/" target="_blank" class="link-card">
+        <div class="link-icon">✅</div>
+        <h3>LeetCode</h3>
+        <p>Contest Rating - 1729</p>
+      </a>
+      <a href="https://codeforces.com/profile/DanielBavisetti" target="_blank" class="link-card">
+        <div class="link-icon">📊</div>
+        <h3>Codeforces</h3>
+        <p>Contest Rating: 436</p>
+      </a>
+      <a href="https://www.hackerrank.com/profile/daniel_bavisett1" target="_blank" class="link-card">
+        <div class="link-icon">🔍</div>
+        <h3>HackerRank</h3>
+        <p>1259 Hackos</p>
+      </a>
+      <a href="https://www.geeksforgeeks.org/user/danielbavisetti0579/" target="_blank" class="link-card">
+        <div class="link-icon">☀️</div>
+        <h3>GeeksforGeeks</h3>
+        <p>Geek</p>
+      </a>
+      <a href="https://github.com/Daniel-Bavisetti/" target="_blank" class="link-card">
+        <div class="link-icon">📅</div>
+        <h3>GitHub</h3>
+        <p>Multiple Projects</p>
+      </a>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 class="section-title">Get In Touch</h2>
+    <div class="contact-container">
+      <div class="contact-card">
+        <div class="contact-icon">📍</div>
+        <h4>Address</h4>
+        <p>Rajahmundry, Andhra Pradesh, India</p>
+      </div>
+      <div class="contact-card">
+        <div class="contact-icon">📞</div>
+        <h4>Call</h4>
+        <p><a href="tel:9121592164">9121592164</a></p>
+      </div>
+      <div class="contact-card">
+        <div class="contact-icon">✉️</div>
+        <h4>Email</h4>
+        <p><a href="mailto:daniel.bavisetti0579@gmail.com">daniel.bavisetti0579@gmail.com</a></p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2024 <strong>Bavisetti Daniel</strong> | All Rights Reserved</p>
+  </footer>
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
