@@ -1,0 +1,11 @@
+Drop the resume PDF in this folder as:
+
+    Daniel_Bavisetti_Resume.pdf
+
+Then update every resume link in index.html (nav "Resume" button, hero
+"Download Resume" button, Experience section download button, and the
+footer "Resume" link) from the current Google Drive URL to:
+
+    assets/resume/Daniel_Bavisetti_Resume.pdf
+
+and delete this placeholder file.

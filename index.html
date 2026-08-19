@@ -4,9 +4,26 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Bavisetti Daniel </title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <title>Daniel Bavisetti | AI/ML Engineer</title>
+  <meta name="description" content="Daniel Bavisetti is an AI/ML Engineer specializing in computer vision, generative AI and NLP, and production ML systems. Explore projects, experience and technical work.">
+  <meta name="keywords" content="Daniel Bavisetti, AI Engineer, ML Engineer, Machine Learning, Computer Vision, Generative AI, FastAPI, Python developer portfolio">
+  <meta name="author" content="Daniel Bavisetti">
+  <link rel="canonical" href="https://daniel-bavisetti.github.io/Daniel_Bavisetti/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://daniel-bavisetti.github.io/Daniel_Bavisetti/">
+  <meta property="og:title" content="Daniel Bavisetti | AI/ML Engineer">
+  <meta property="og:description" content="AI/ML Engineer specializing in computer vision, generative AI and NLP, and production ML systems. Explore projects, experience and technical work.">
+  <meta property="og:image" content="https://daniel-bavisetti.github.io/Daniel_Bavisetti/assets/img/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Daniel Bavisetti | AI/ML Engineer">
+  <meta name="twitter:description" content="AI/ML Engineer specializing in computer vision, generative AI and NLP, and production ML systems.">
+  <meta name="twitter:image" content="https://daniel-bavisetti.github.io/Daniel_Bavisetti/assets/img/og-image.png">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -15,47 +32,120 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
   <div class="bg-animation"></div>
 
-  <nav>
+  <nav aria-label="Primary">
     <div class="nav-container">
-      <div class="logo">Bavisetti Daniel</div>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#links">Links</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <button class="mobile-toggle" onclick="toggleMenu()">☰</button>
+      <a href="#home" class="logo">Daniel Bavisetti</a>
+      <div class="nav-right">
+        <button class="search-toggle" id="searchToggle" aria-expanded="false" aria-controls="searchPanel" aria-label="Search this site">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 3a7 7 0 1 0 4.35 12.5l5.07 5.08 1.42-1.42-5.08-5.07A7 7 0 0 0 10 3Zm0 2a5 5 0 1 1 0 10 5 5 0 0 1 0-10Z"/></svg>
+        </button>
+        <button class="mobile-toggle" onclick="toggleMenu()" aria-expanded="false" aria-controls="navLinks" aria-label="Toggle navigation menu">
+          <span class="mobile-toggle-icon"></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#build">Build</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#opensource">Open Source</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#links">Links</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="https://drive.google.com/uc?export=download&amp;id=1YV2-aIi_iUuKmIl474Cd4BjDEclVXs2i" target="_blank" rel="noopener" class="nav-resume-btn">Resume</a></li>
+        </ul>
+      </div>
     </div>
   </nav>
 
+  <div class="search-panel" id="searchPanel" role="search" hidden>
+    <div class="search-panel-inner">
+      <svg viewBox="0 0 24 24" aria-hidden="true" class="search-panel-icon"><path d="M10 3a7 7 0 1 0 4.35 12.5l5.07 5.08 1.42-1.42-5.08-5.07A7 7 0 0 0 10 3Zm0 2a5 5 0 1 1 0 10 5 5 0 0 1 0-10Z"/></svg>
+      <input type="text" id="searchInput" placeholder="Search projects, skills, experience&hellip;" autocomplete="off" aria-label="Search this site">
+      <button type="button" id="searchClose" aria-label="Close search">&times;</button>
+    </div>
+    <ul class="search-results" id="searchResults"></ul>
+  </div>
+  <div class="search-backdrop" id="searchBackdrop" hidden></div>
+
+  <main id="main">
+
   <section id="home" class="hero">
-    <div class="hero-content">
-      <h1>Bavisetti Daniel</h1>
-      <div class="subtitle">ML Engineer | Data Scientist | Developer</div>
-      <p>Passionate developer with a strong interest in AI, data, and backend systems. Building smart, real-world solutions that solve problems efficiently and elegantly.</p>
-      <div class="social-links">
-        <a href="tel:9121592164" title="Phone">📞</a>
-        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=daniel.bavisetti0579@gmail.com" target="_blank" title="Email">✉️</a>
-        <a href="https://www.linkedin.com/in/daniel-bavisetti/" target="_blank" title="LinkedIn">💼</a>
-        <a href="https://github.com/Daniel-Bavisetti/" target="_blank" title="GitHub">🔗</a>
+    <div class="hero-inner">
+      <div class="hero-content">
+        <p class="hero-eyebrow">Hi, I'm Daniel Bavisetti</p>
+        <h1>AI/ML Engineer building <span class="gradient-text">intelligent, production-ready</span> systems.</h1>
+
+        <p class="hero-focus">
+          <span class="hero-focus-label">Focused on</span>
+          <span id="typed-roles" aria-hidden="true">Computer Vision</span>
+          <span class="sr-only">Computer Vision, Generative AI &amp; NLP, ML-Powered Backends, and MLOps &amp; Deployment.</span>
+        </p>
+
+        <p class="hero-desc">I build computer vision pipelines, ML-powered backends, and production inference systems &mdash; turning models into deployed, reliable software. Currently deepening my work in generative AI and applied NLP alongside core ML engineering.</p>
+
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="https://drive.google.com/uc?export=download&amp;id=1YV2-aIi_iUuKmIl474Cd4BjDEclVXs2i" target="_blank" rel="noopener" class="btn btn-outline">Download Resume</a>
+        </div>
+
+        <div class="social-links">
+          <a href="https://github.com/Daniel-Bavisetti/" target="_blank" rel="noopener" aria-label="GitHub profile">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.09 3.29 9.4 7.86 10.93.58.1.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.52-1.34-1.28-1.7-1.28-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.05 11.05 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.76.12 3.05.74.8 1.19 1.83 1.19 3.09 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14 0 1.55-.01 2.79-.01 3.17 0 .31.21.67.8.56A10.52 10.52 0 0 0 23.5 12c0-6.35-5.15-11.5-11.5-11.5Z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/daniel-bavisetti/" target="_blank" rel="noopener" aria-label="LinkedIn profile">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.03-1.85-3.03-1.86 0-2.14 1.45-2.14 2.94v5.66H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.26 2.37 4.26 5.46v6.28ZM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg>
+          </a>
+          <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=daniel.bavisetti0579@gmail.com" target="_blank" rel="noopener" aria-label="Send an email">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 5.5A2.5 2.5 0 0 1 4.5 3h15A2.5 2.5 0 0 1 22 5.5v13a2.5 2.5 0 0 1-2.5 2.5h-15A2.5 2.5 0 0 1 2 18.5v-13Zm2.2.5 7.3 5.6a.8.8 0 0 0 1 0L19.8 6H4.2Zm15.8 1.7-7.14 5.48a2.8 2.8 0 0 1-3.42 0L4.3 7.7v10.8c0 .11.09.2.2.2h15a.2.2 0 0 0 .2-.2V7.7Z"/></svg>
+          </a>
+          <a href="tel:9121592164" aria-label="Call phone number">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8Z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <svg viewBox="0 0 420 420" class="node-graph">
+          <g class="ng-links">
+            <line x1="70" y1="90" x2="210" y2="60"/>
+            <line x1="70" y1="90" x2="210" y2="150"/>
+            <line x1="70" y1="210" x2="210" y2="60"/>
+            <line x1="70" y1="210" x2="210" y2="150"/>
+            <line x1="70" y1="210" x2="210" y2="240"/>
+            <line x1="70" y1="330" x2="210" y2="150"/>
+            <line x1="70" y1="330" x2="210" y2="240"/>
+            <line x1="70" y1="330" x2="210" y2="330"/>
+            <line x1="210" y1="60" x2="350" y2="120"/>
+            <line x1="210" y1="150" x2="350" y2="120"/>
+            <line x1="210" y1="150" x2="350" y2="210"/>
+            <line x1="210" y1="240" x2="350" y2="210"/>
+            <line x1="210" y1="240" x2="350" y2="300"/>
+            <line x1="210" y1="330" x2="350" y2="300"/>
+          </g>
+          <g class="ng-nodes">
+            <circle cx="70" cy="90" r="6" class="c-primary"/>
+            <circle cx="70" cy="210" r="6" class="c-primary"/>
+            <circle cx="70" cy="330" r="6" class="c-primary"/>
+            <circle cx="210" cy="60" r="6" class="c-secondary"/>
+            <circle cx="210" cy="150" r="6" class="c-secondary"/>
+            <circle cx="210" cy="240" r="6" class="c-secondary"/>
+            <circle cx="210" cy="330" r="6" class="c-secondary"/>
+            <circle cx="350" cy="120" r="6" class="c-accent"/>
+            <circle cx="350" cy="210" r="6" class="c-accent"/>
+            <circle cx="350" cy="300" r="6" class="c-accent"/>
+          </g>
+        </svg>
       </div>
     </div>
   </section>
@@ -64,100 +154,265 @@
     <h2 class="section-title">About Me</h2>
     <div class="about-container">
       <div class="profile-img">
-        <img src="./assets/img/my-profile-img.png" alt="Bavisetti Daniel">
+        <img src="assets/img/my-profile-img.png" alt="Portrait of Daniel Bavisetti" width="200" height="200">
       </div>
       <div class="about-content">
-        <h3>AI & ML Developer</h3>
-        <p>Machine Learning Engineer skilled in developing, optimizing, and deploying ML models for real-world applications. Proficient in Python, TensorFlow, and PyTorch, with a strong foundation in deep learning, computer vision, and software engineering.</p>
+        <h3>AI/ML engineer who builds complete systems</h3>
+        <p>I specialize in taking machine learning from notebook to production &mdash; computer vision pipelines, NLP-driven analytics, and ML-backed APIs that hold up under real traffic. My work spans model development with PyTorch, TensorFlow and YOLO through to deployment with FastAPI, Docker, Kubernetes and NVIDIA Triton, because a model that isn't shipped isn't finished.</p>
+        <p>I enjoy the full loop: framing the problem, working the data, building and evaluating the model, then writing the backend that makes it usable by something other than a notebook.</p>
         <div class="info-grid">
-          <div class="info-item">
-            <strong>Birthday</strong>
-            29 Oct 2003
-          </div>
-          <div class="info-item">
-            <strong>Age</strong>
-            22
-          </div>
           <div class="info-item">
             <strong>Phone</strong>
             <a href="tel:9121592164">9121592164</a>
+          </div>
+          <div class="info-item">
+            <strong>Email</strong>
+            <a href="mailto:daniel.bavisetti0579@gmail.com">daniel.bavisetti0579@gmail.com</a>
           </div>
           <div class="info-item">
             <strong>Qualification</strong>
             BTech (Hons) CSE
           </div>
           <div class="info-item">
-            <strong>City</strong>
+            <strong>Location</strong>
             Rajahmundry, India
-          </div>
-          <div class="info-item">
-            <strong>Email</strong>
-            daniel.bavisetti0579@gmail.com
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="skills">
-    <h2 class="section-title">Skills</h2>
-    <div class="skills-grid">
-      <div class="skill-category">
-        <h3>Machine Learning & Deep Learning</h3>
-        <div class="skill-tags">
-          <span class="skill-tag">Model Development</span>
-          <span class="skill-tag">Hyperparameter Tuning</span>
-          <span class="skill-tag">Regression & Classification</span>
-          <span class="skill-tag">CNNs</span>
-          <span class="skill-tag">RNNs</span>
-          <span class="skill-tag">Transformers</span>
-          <span class="skill-tag">YOLO</span>
-          <span class="skill-tag">Model Deployment</span>
+  <section id="build">
+    <h2 class="section-title">What I Build</h2>
+    <div class="build-grid">
+      <div class="build-card">
+        <div class="build-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M12 2 3 7v10l9 5 9-5V7l-9-5Zm0 2.3 6.5 3.6L12 11.5 5.5 7.9 12 4.3ZM5 9.2l6 3.3v6.9l-6-3.3V9.2Zm8 10.2v-6.9l6-3.3v6.7l-6 3.5Z"/></svg>
         </div>
+        <h3>Intelligent Applications</h3>
+        <p>End-to-end applications where ML is the core feature, not an add-on &mdash; from raw data to a working product.</p>
       </div>
-      <div class="skill-category">
-        <h3>Programming & Frameworks</h3>
-        <div class="skill-tags">
-          <span class="skill-tag">Python</span>
-          <span class="skill-tag">C++</span>
-          <span class="skill-tag">SQL</span>
-          <span class="skill-tag">TensorFlow</span>
-          <span class="skill-tag">PyTorch</span>
-          <span class="skill-tag">Scikit-learn</span>
-          <span class="skill-tag">OpenCV</span>
-          <span class="skill-tag">Flask</span>
-          <span class="skill-tag">FastAPI</span>
+      <div class="build-card">
+        <div class="build-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M4 4h16v11H7l-3 3V4Zm3 4h10v2H7V8Zm0 4h7v2H7v-2Z"/></svg>
         </div>
+        <h3>Generative AI &amp; NLP</h3>
+        <p>LLM API integration (Gemini, Groq) and NLP pipelines &mdash; from TF-IDF/sentiment feature extraction to prompt-driven automation.</p>
       </div>
-      <div class="skill-category">
-        <h3>MLOps & Tools</h3>
-        <div class="skill-tags">
-          <span class="skill-tag">Docker</span>
-          <span class="skill-tag">Kubernetes</span>
-          <span class="skill-tag">MLflow</span>
-          <span class="skill-tag">Git</span>
-          <span class="skill-tag">REST APIs</span>
-          <span class="skill-tag">AWS</span>
-          <span class="skill-tag">GCP</span>
+      <div class="build-card">
+        <div class="build-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M12 5c-5 0-9.3 3-11 7 1.7 4 6 7 11 7s9.3-3 11-7c-1.7-4-6-7-11-7Zm0 11.5A4.5 4.5 0 1 1 12 7.5a4.5 4.5 0 0 1 0 9Zm0-2.5a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"/></svg>
         </div>
+        <h3>Computer Vision</h3>
+        <p>Real-time detection, tracking and OCR pipelines built on YOLO and OpenCV, tuned for accuracy under real-world conditions.</p>
       </div>
-      <div class="skill-category">
-        <h3>Data & Visualization</h3>
-        <div class="skill-tags">
-          <span class="skill-tag">Pandas</span>
-          <span class="skill-tag">NumPy</span>
-          <span class="skill-tag">Power BI</span>
-          <span class="skill-tag">Tableau</span>
-          <span class="skill-tag">Matplotlib</span>
-          <span class="skill-tag">Seaborn</span>
+      <div class="build-card">
+        <div class="build-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="6" rx="1.2" fill="none" stroke="currentColor" stroke-width="1.6"/><rect x="4" y="14" width="16" height="6" rx="1.2" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="7.2" cy="7" r="1"/><circle cx="7.2" cy="17" r="1"/></svg>
         </div>
+        <h3>Backend &amp; APIs</h3>
+        <p>Production-oriented services with FastAPI/Flask, containerized and served behind REST APIs &mdash; including model-serving with NVIDIA Triton.</p>
+      </div>
+      <div class="build-card">
+        <div class="build-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M4 19V5h2v14H4Zm7 0v-9h2v9h-2ZM18 19V9h2v10h-2Z"/></svg>
+        </div>
+        <h3>Data &amp; ML Systems</h3>
+        <p>Data pipelines, feature engineering and predictive modeling &mdash; from raw records to a model that answers a real question.</p>
       </div>
     </div>
+  </section>
+
+  <section id="projects">
+    <h2 class="section-title">Featured Projects</h2>
+    <p class="section-subtitle">Real projects, real repos. Metrics below are as reported in each project's own README.</p>
+
+    <div class="projects-grid">
+
+      <article class="project-card project-card-wide">
+        <div class="project-card-head">
+          <h3>Production ML Inference API</h3>
+          <span class="project-metric">p95 latency 200ms &middot; 0 failed requests</span>
+        </div>
+        <p class="project-desc">A production-grade serving layer for a ResNet50 image classifier &mdash; FastAPI in front of NVIDIA Triton Inference Server, running ONNX with dynamic batching, containerized and load-tested.</p>
+        <div class="project-tags">
+          <span class="project-tag">FastAPI</span>
+          <span class="project-tag">NVIDIA Triton</span>
+          <span class="project-tag">ONNX</span>
+          <span class="project-tag">Docker</span>
+          <span class="project-tag">Kubernetes</span>
+          <span class="project-tag">Prometheus</span>
+        </div>
+        <details class="project-diagram">
+          <summary>View architecture</summary>
+          <div class="flow">
+            <span class="flow-step">Client Request</span>
+            <span class="flow-arrow" aria-hidden="true">&rarr;</span>
+            <span class="flow-step">FastAPI<br><small>preprocess (224&times;224, normalize)</small></span>
+            <span class="flow-arrow" aria-hidden="true">&rarr;</span>
+            <span class="flow-step">NVIDIA Triton<br><small>ONNX, dynamic batching</small></span>
+            <span class="flow-arrow" aria-hidden="true">&rarr;</span>
+            <span class="flow-step">Response</span>
+          </div>
+          <p class="flow-note">Kubernetes manifests with HPA at 70% CPU utilization; Prometheus metrics on both layers. Load test: ~122ms avg / 200ms p95 at 10 concurrent users, zero failed requests.</p>
+        </details>
+        <div class="project-links">
+          <a href="https://github.com/Daniel-Bavisetti/fastapi-triton-resnet50" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.09 3.29 9.4 7.86 10.93.58.1.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.52-1.34-1.28-1.7-1.28-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.05 11.05 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.76.12 3.05.74.8 1.19 1.83 1.19 3.09 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14 0 1.55-.01 2.79-.01 3.17 0 .31.21.67.8.56A10.52 10.52 0 0 0 23.5 12c0-6.35-5.15-11.5-11.5-11.5Z"/></svg>
+            GitHub
+          </a>
+        </div>
+      </article>
+
+      <article class="project-card" id="proj-vehicle-detection">
+        <div class="project-card-head">
+          <h3>Real-Time Vehicle Detection &amp; Tracking</h3>
+          <span class="project-metric">95%+ detection accuracy</span>
+        </div>
+        <p class="project-desc">Computer vision pipeline for an IoT-based smart parking system &mdash; vehicle detection, multi-vehicle tracking and license-plate recognition in dynamic, real-world conditions.</p>
+        <div class="project-tags">
+          <span class="project-tag">YOLO</span>
+          <span class="project-tag">OpenCV</span>
+          <span class="project-tag">OCR</span>
+          <span class="project-tag">Python</span>
+        </div>
+        <details class="project-diagram">
+          <summary>View pipeline</summary>
+          <div class="flow flow-vertical">
+            <span class="flow-step">Camera Feed</span>
+            <span class="flow-arrow" aria-hidden="true">&darr;</span>
+            <span class="flow-step">YOLO Vehicle Detection</span>
+            <span class="flow-arrow" aria-hidden="true">&darr;</span>
+            <span class="flow-step">Multi-Vehicle Tracking</span>
+            <span class="flow-arrow" aria-hidden="true">&darr;</span>
+            <span class="flow-step">License Plate Detection + OCR</span>
+            <span class="flow-arrow" aria-hidden="true">&darr;</span>
+            <span class="flow-step">Parking Duration / Billing</span>
+          </div>
+        </details>
+        <div class="project-links">
+          <a href="#experience" class="btn btn-ghost btn-sm">Research Internship &mdash; NIT Rourkela</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-card-head">
+          <h3>Customer Support CSAT Prediction</h3>
+          <span class="project-metric">89.2% accuracy &middot; F1 0.89</span>
+        </div>
+        <p class="project-desc">Predicting customer satisfaction from 85,907 support interactions and surfacing the operational drivers behind it &mdash; agent tenure, shift, issue category and response time.</p>
+        <div class="project-tags">
+          <span class="project-tag">XGBoost</span>
+          <span class="project-tag">SMOTE</span>
+          <span class="project-tag">SHAP</span>
+          <span class="project-tag">NLP / TF-IDF</span>
+        </div>
+        <details class="project-diagram">
+          <summary>View pipeline</summary>
+          <div class="flow flow-vertical">
+            <span class="flow-step">85,907 Support Records</span>
+            <span class="flow-arrow" aria-hidden="true">&darr;</span>
+            <span class="flow-step">Cleaning + Feature Engineering</span>
+            <span class="flow-arrow" aria-hidden="true">&darr;</span>
+            <span class="flow-step">SMOTE Class Balancing</span>
+            <span class="flow-arrow" aria-hidden="true">&darr;</span>
+            <span class="flow-step">NLP Sentiment (TF-IDF)</span>
+            <span class="flow-arrow" aria-hidden="true">&darr;</span>
+            <span class="flow-step">XGBoost Classifier</span>
+            <span class="flow-arrow" aria-hidden="true">&darr;</span>
+            <span class="flow-step">SHAP Driver Analysis</span>
+          </div>
+        </details>
+        <div class="project-links">
+          <a href="https://github.com/Daniel-Bavisetti/Flipkart_Customer_Satisfaction" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.09 3.29 9.4 7.86 10.93.58.1.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.52-1.34-1.28-1.7-1.28-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.05 11.05 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.76.12 3.05.74.8 1.19 1.83 1.19 3.09 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14 0 1.55-.01 2.79-.01 3.17 0 .31.21.67.8.56A10.52 10.52 0 0 0 23.5 12c0-6.35-5.15-11.5-11.5-11.5Z"/></svg>
+            GitHub
+          </a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-card-head">
+          <h3>IoT Sensor Data Imputation Platform</h3>
+          <span class="project-metric">~30% better data reliability</span>
+        </div>
+        <p class="project-desc">ML-based imputation for missing IoT sensor readings &mdash; temperature, humidity and air quality &mdash; so downstream analytics can trust the dataset.</p>
+        <div class="project-tags">
+          <span class="project-tag">Python</span>
+          <span class="project-tag">Pandas</span>
+          <span class="project-tag">Scikit-learn</span>
+          <span class="project-tag">IoT Data</span>
+        </div>
+        <details class="project-diagram">
+          <summary>View pipeline</summary>
+          <div class="flow flow-vertical">
+            <span class="flow-step">Raw Sensor Streams</span>
+            <span class="flow-arrow" aria-hidden="true">&darr;</span>
+            <span class="flow-step">Missing-Value Detection</span>
+            <span class="flow-arrow" aria-hidden="true">&darr;</span>
+            <span class="flow-step">ML-Based Imputation</span>
+            <span class="flow-arrow" aria-hidden="true">&darr;</span>
+            <span class="flow-step">Reliability Validation</span>
+          </div>
+        </details>
+      </article>
+
+      <article class="project-card">
+        <div class="project-card-head">
+          <h3>XAMBOREE &mdash; Event Management Platform</h3>
+        </div>
+        <p class="project-desc">Full-stack event management platform with ticket booking, live updates and a backend API supporting the whole event lifecycle.</p>
+        <div class="project-tags">
+          <span class="project-tag">Full-Stack</span>
+          <span class="project-tag">REST API</span>
+          <span class="project-tag">Backend</span>
+        </div>
+      </article>
+
+    </div>
+
+  </section>
+
+  <section id="opensource">
+    <h2 class="section-title">Open-Source &amp; Other Work</h2>
+    <p class="section-subtitle">Live from GitHub &mdash; descriptions below are copied as-is from each repo, and the stats update automatically.</p>
+
+    <div class="stats-row">
+      <img loading="lazy" width="495" height="195" src="https://github-readme-stats.vercel.app/api?username=Daniel-Bavisetti&amp;show_icons=true&amp;hide_border=true&amp;hide_title=true&amp;bg_color=00000000&amp;title_color=3b82f6&amp;text_color=e2e8f0&amp;icon_color=06b6d4" alt="Daniel Bavisetti's GitHub stats: contributions, stars and commit activity">
+      <img loading="lazy" width="300" height="220" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Daniel-Bavisetti&amp;layout=compact&amp;hide_border=true&amp;bg_color=00000000&amp;title_color=3b82f6&amp;text_color=e2e8f0" alt="Daniel Bavisetti's most-used languages on GitHub">
+    </div>
+
+    <div class="oss-grid">
+      <a class="oss-card" href="https://github.com/Daniel-Bavisetti/Counterfactual" target="_blank" rel="noopener">
+        <h3>Counterfactual</h3>
+        <p>Counterfactual Explanation System for Actionable Decision Making.</p>
+      </a>
+      <a class="oss-card" href="https://github.com/Daniel-Bavisetti/peer-reviewer-finder" target="_blank" rel="noopener">
+        <h3>Peer Reviewer Finder</h3>
+        <p>Helps journals, editors and research teams discover suitable reviewers for a manuscript.</p>
+      </a>
+      <a class="oss-card" href="https://github.com/Daniel-Bavisetti/MEMC" target="_blank" rel="noopener">
+        <h3>MEMC</h3>
+        <p>Motion Estimation and Motion Compensation.</p>
+      </a>
+      <a class="oss-card" href="https://github.com/Daniel-Bavisetti/Webscraper" target="_blank" rel="noopener">
+        <h3>Webscraper</h3>
+        <p>Web scraper using Python.</p>
+      </a>
+    </div>
+
+    <p class="projects-more">Also on GitHub:
+      <a href="https://github.com/Daniel-Bavisetti/brain-tumor-classification" target="_blank" rel="noopener">brain-tumor-classification</a> &middot;
+      <a href="https://github.com/Daniel-Bavisetti/DSA" target="_blank" rel="noopener">DSA</a> &middot;
+      <a href="https://github.com/Daniel-Bavisetti/Codexis" target="_blank" rel="noopener">Codexis</a> &middot;
+      <a href="https://github.com/Daniel-Bavisetti/Social-Media-Automation" target="_blank" rel="noopener">Social-Media-Automation</a> &middot;
+      <a href="https://github.com/Daniel-Bavisetti/" target="_blank" rel="noopener">full profile &rarr;</a>
+    </p>
   </section>
 
   <section id="experience">
-    <h2 class="section-title">Experience & Education</h2>
-    
+    <h2 class="section-title">Experience &amp; Education</h2>
+
     <div class="experience-card">
       <h3>Research Intern</h3>
       <div class="date">May 2024 - July 2024</div>
@@ -167,6 +422,7 @@
         <li>Trained and optimized a custom YOLO-based object detection model with 95%+ accuracy in dynamic environments</li>
         <li>Built a real-time multi-vehicle tracking pipeline and integrated server-side communication for scalable data transmission</li>
       </ul>
+      <a href="#proj-vehicle-detection" class="experience-link">See the project &rarr;</a>
     </div>
 
     <div class="experience-card">
@@ -179,39 +435,114 @@
       </ul>
     </div>
 
-    <a href="https://drive.google.com/uc?export=download&id=1YV2-aIi_iUuKmIl474Cd4BjDEclVXs2i" class="download-btn">📥 Download Resume PDF</a>
+    <a href="https://drive.google.com/uc?export=download&amp;id=1YV2-aIi_iUuKmIl474Cd4BjDEclVXs2i" target="_blank" rel="noopener" class="download-btn">Download Resume PDF</a>
+  </section>
+
+  <section id="skills">
+    <h2 class="section-title">Technical Stack</h2>
+    <div class="skills-grid">
+      <div class="skill-category">
+        <h3>AI / Machine Learning</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Model Development</span>
+          <span class="skill-tag">Hyperparameter Tuning</span>
+          <span class="skill-tag">Regression &amp; Classification</span>
+          <span class="skill-tag">CNNs</span>
+          <span class="skill-tag">RNNs</span>
+          <span class="skill-tag">Model Deployment</span>
+          <span class="skill-tag">TensorFlow</span>
+          <span class="skill-tag">PyTorch</span>
+          <span class="skill-tag">Scikit-learn</span>
+        </div>
+      </div>
+      <div class="skill-category">
+        <h3>Generative AI &amp; NLP</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Transformers</span>
+          <span class="skill-tag">NLP</span>
+          <span class="skill-tag">TF-IDF</span>
+          <span class="skill-tag">LLM APIs (Gemini, Groq)</span>
+          <span class="skill-tag">Prompt Engineering</span>
+        </div>
+      </div>
+      <div class="skill-category">
+        <h3>Computer Vision</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">YOLO</span>
+          <span class="skill-tag">OpenCV</span>
+          <span class="skill-tag">OCR</span>
+          <span class="skill-tag">Real-time Detection &amp; Tracking</span>
+        </div>
+      </div>
+      <div class="skill-category">
+        <h3>Backend &amp; APIs</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">FastAPI</span>
+          <span class="skill-tag">Flask</span>
+          <span class="skill-tag">REST APIs</span>
+          <span class="skill-tag">ONNX</span>
+          <span class="skill-tag">NVIDIA Triton</span>
+        </div>
+      </div>
+      <div class="skill-category">
+        <h3>MLOps &amp; Infrastructure</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Docker</span>
+          <span class="skill-tag">Kubernetes</span>
+          <span class="skill-tag">MLflow</span>
+          <span class="skill-tag">Prometheus</span>
+          <span class="skill-tag">Git</span>
+          <span class="skill-tag">AWS</span>
+          <span class="skill-tag">GCP</span>
+        </div>
+      </div>
+      <div class="skill-category">
+        <h3>Data &amp; Visualization</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Pandas</span>
+          <span class="skill-tag">NumPy</span>
+          <span class="skill-tag">SQL</span>
+          <span class="skill-tag">Power BI</span>
+          <span class="skill-tag">Tableau</span>
+          <span class="skill-tag">Matplotlib</span>
+          <span class="skill-tag">Seaborn</span>
+        </div>
+      </div>
+      <div class="skill-category">
+        <h3>Languages</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">C++</span>
+          <span class="skill-tag">SQL</span>
+        </div>
+      </div>
+    </div>
   </section>
 
   <section id="links">
     <h2 class="section-title">Coding Profiles</h2>
     <div class="links-grid">
-      <a href="https://www.codechef.com/users/daniel_b" target="_blank" class="link-card">
-        <div class="link-icon">💼</div>
+      <a href="https://www.codechef.com/users/daniel_b" target="_blank" rel="noopener" class="link-card">
         <h3>CodeChef</h3>
         <p>2 Star Rated</p>
       </a>
-      <a href="https://leetcode.com/u/Daniel_Bavisetti/" target="_blank" class="link-card">
-        <div class="link-icon">✅</div>
+      <a href="https://leetcode.com/u/Daniel_Bavisetti/" target="_blank" rel="noopener" class="link-card">
         <h3>LeetCode</h3>
         <p>Contest Rating - 1729</p>
       </a>
-      <a href="https://codeforces.com/profile/DanielBavisetti" target="_blank" class="link-card">
-        <div class="link-icon">📊</div>
+      <a href="https://codeforces.com/profile/DanielBavisetti" target="_blank" rel="noopener" class="link-card">
         <h3>Codeforces</h3>
         <p>Contest Rating: 436</p>
       </a>
-      <a href="https://www.hackerrank.com/profile/daniel_bavisett1" target="_blank" class="link-card">
-        <div class="link-icon">🔍</div>
+      <a href="https://www.hackerrank.com/profile/daniel_bavisett1" target="_blank" rel="noopener" class="link-card">
         <h3>HackerRank</h3>
         <p>1259 Hackos</p>
       </a>
-      <a href="https://www.geeksforgeeks.org/user/danielbavisetti0579/" target="_blank" class="link-card">
-        <div class="link-icon">☀️</div>
+      <a href="https://www.geeksforgeeks.org/user/danielbavisetti0579/" target="_blank" rel="noopener" class="link-card">
         <h3>GeeksforGeeks</h3>
         <p>Geek</p>
       </a>
-      <a href="https://github.com/Daniel-Bavisetti/" target="_blank" class="link-card">
-        <div class="link-icon">📅</div>
+      <a href="https://github.com/Daniel-Bavisetti/" target="_blank" rel="noopener" class="link-card">
         <h3>GitHub</h3>
         <p>Multiple Projects</p>
       </a>
@@ -220,45 +551,69 @@
 
   <section id="contact">
     <h2 class="section-title">Get In Touch</h2>
+    <p class="section-subtitle">Open to AI/ML Engineer, Generative AI Engineer and Backend roles &mdash; happy to talk about any of the projects above.</p>
     <div class="contact-container">
       <div class="contact-card">
-        <div class="contact-icon">📍</div>
-        <h4>Address</h4>
+        <h3>Address</h3>
         <p>Rajahmundry, Andhra Pradesh, India</p>
       </div>
       <div class="contact-card">
-        <div class="contact-icon">📞</div>
-        <h4>Call</h4>
+        <h3>Call</h3>
         <p><a href="tel:9121592164">9121592164</a></p>
       </div>
       <div class="contact-card">
-        <div class="contact-icon">✉️</div>
-        <h4>Email</h4>
+        <h3>Email</h3>
         <p><a href="mailto:daniel.bavisetti0579@gmail.com">daniel.bavisetti0579@gmail.com</a></p>
       </div>
+      <div class="contact-card">
+        <h3>Connect</h3>
+        <p><a href="https://www.linkedin.com/in/daniel-bavisetti/" target="_blank" rel="noopener">LinkedIn</a> &middot; <a href="https://github.com/Daniel-Bavisetti/" target="_blank" rel="noopener">GitHub</a></p>
+      </div>
     </div>
+    <a href="mailto:daniel.bavisetti0579@gmail.com" class="download-btn">Email Me</a>
   </section>
 
-  <footer>
-    <p>© 2024 <strong>Bavisetti Daniel</strong> | All Rights Reserved</p>
-  </footer>
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  </main>
 
-  <!-- Preloader -->
-  <div id="preloader"></div>
+  <footer>
+    <div class="footer-links">
+      <a href="https://github.com/Daniel-Bavisetti/" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/daniel-bavisetti/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="mailto:daniel.bavisetti0579@gmail.com">Email</a>
+      <a href="https://drive.google.com/uc?export=download&amp;id=1YV2-aIi_iUuKmIl474Cd4BjDEclVXs2i" target="_blank" rel="noopener">Resume</a>
+    </div>
+    <p>&copy; <span id="year">2026</span> <strong>Daniel Bavisetti</strong> | All Rights Reserved</p>
+  </footer>
+
+  <a href="#home" id="scroll-top" aria-label="Scroll to top">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5 5 12l1.41 1.41L11 8.83V19h2V8.83l4.59 4.58L19 12z"/></svg>
+  </a>
+
+  <button id="chatToggle" aria-expanded="false" aria-controls="chatPanel" aria-label="Ask a question about Daniel">
+    <svg viewBox="0 0 24 24" aria-hidden="true" class="chat-icon-open"><path d="M4 4h16a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1H8l-4.7 3.76A.5.5 0 0 1 2.5 20.5V5a1 1 0 0 1 1-1Z"/></svg>
+    <svg viewBox="0 0 24 24" aria-hidden="true" class="chat-icon-close"><path d="m6.4 4.98 12.6 12.6-1.42 1.42L4.98 6.4z"/><path d="M19 6.4 6.4 19l-1.42-1.42L17.58 4.98z"/></svg>
+  </button>
+
+  <div class="chat-panel" id="chatPanel" hidden>
+    <div class="chat-panel-header">
+      <div>
+        <strong>Ask about Daniel</strong>
+        <span>Answers pulled straight from this page &mdash; not a general AI</span>
+      </div>
+    </div>
+    <div class="chat-messages" id="chatMessages" role="log" aria-live="polite"></div>
+    <div class="chat-quick-replies" id="chatQuickReplies"></div>
+    <form class="chat-input-row" id="chatForm">
+      <label for="chatInput" class="sr-only">Ask a question about Daniel</label>
+      <input type="text" id="chatInput" placeholder="Ask about skills, projects, experience&hellip;" autocomplete="off">
+      <button type="submit" aria-label="Send">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 20v-6l8-2-8-2V4l19 8-19 8Z"/></svg>
+      </button>
+    </form>
+  </div>
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
