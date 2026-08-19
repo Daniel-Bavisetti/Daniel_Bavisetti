@@ -5,21 +5,25 @@
 }
 
 :root {
-  --primary: #3b82f6;
-  --secondary: #8b5cf6;
-  --accent: #06b6d4;
-  --dark: #0f172a;
-  --darker: #020617;
-  --light: #e2e8f0;
-  --dim: #94a3b8;
-  --card-bg: rgba(30, 41, 59, 0.55);
-  --card-bg-solid: #1e293b;
-  --border: rgba(148, 163, 184, 0.16);
-  --border-strong: rgba(59, 130, 246, 0.35);
+  --primary: #c6a15b;
+  --secondary: #8a6a3f;
+  --accent: #e3c988;
+  --dark: #16140f;
+  --darker: #09080a;
+  --on-accent: #14110a;
+  --light: #ece7da;
+  --dim: #9c9484;
+  --card-bg: rgba(255, 248, 235, 0.035);
+  --card-bg-solid: #17150f;
+  --border: rgba(198, 161, 91, 0.14);
+  --border-strong: rgba(198, 161, 91, 0.42);
+  --shadow: rgba(4, 3, 2, 0.5);
   --radius-sm: 8px;
   --radius-md: 14px;
   --radius-lg: 20px;
+  --radius-pill: 6px;
   --font-heading: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --font-display: 'Playfair Display', Georgia, 'Times New Roman', serif;
   --nav-height: 72px;
 }
 
@@ -30,7 +34,7 @@ html {
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  background: linear-gradient(160deg, #0a0908 0%, #14120c 55%, #0a0908 100%);
   color: var(--light);
   overflow-x: hidden;
 }
@@ -62,7 +66,7 @@ img {
   top: -100px;
   left: 1rem;
   background: var(--primary);
-  color: #fff;
+  color: var(--on-accent);
   padding: 0.75rem 1.25rem;
   border-radius: var(--radius-sm);
   z-index: 2000;
@@ -109,10 +113,9 @@ summary:focus-visible,
   position: absolute;
   width: 200%;
   height: 200%;
-  background: radial-gradient(circle at 20% 50%, rgba(59, 130, 246, 0.12) 0%, transparent 50%),
-              radial-gradient(circle at 80% 80%, rgba(139, 92, 246, 0.12) 0%, transparent 50%),
-              radial-gradient(circle at 40% 20%, rgba(6, 182, 212, 0.08) 0%, transparent 50%);
-  animation: float 24s ease-in-out infinite;
+  background: radial-gradient(circle at 18% 22%, rgba(198, 161, 91, 0.09) 0%, transparent 45%),
+              radial-gradient(circle at 82% 78%, rgba(138, 106, 63, 0.08) 0%, transparent 50%);
+  animation: float 32s ease-in-out infinite;
 }
 
 @keyframes float {
@@ -129,7 +132,7 @@ nav {
   height: var(--nav-height);
   display: flex;
   align-items: center;
-  background: rgba(15, 23, 42, 0.85);
+  background: rgba(9, 8, 7, 0.85);
   backdrop-filter: blur(10px);
   z-index: 1000;
   padding: 0 2rem;
@@ -146,8 +149,10 @@ nav {
 }
 
 .logo {
-  font-size: 1.4rem;
+  font-family: var(--font-display);
+  font-size: 1.5rem;
   font-weight: 700;
+  letter-spacing: 0.01em;
   text-decoration: none;
   background: linear-gradient(135deg, var(--primary), var(--secondary));
   -webkit-background-clip: text;
@@ -193,14 +198,14 @@ nav {
 }
 
 .nav-links a.active {
-  color: #fff;
+  color: #f7f3ea;
 }
 
 .nav-resume-btn {
   background: linear-gradient(135deg, var(--primary), var(--secondary));
   padding: 0.5rem 1.1rem;
-  border-radius: 30px;
-  color: #fff !important;
+  border-radius: var(--radius-pill);
+  color: var(--on-accent) !important;
   font-weight: 600;
   font-size: 0.9rem;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
@@ -208,12 +213,12 @@ nav {
 
 .nav-resume-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(59, 130, 246, 0.4);
+  box-shadow: 0 8px 20px rgba(198, 161, 91, 0.4);
 }
 
 .nav-resume-btn:active {
   transform: translateY(0);
-  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.35);
+  box-shadow: 0 4px 12px rgba(198, 161, 91, 0.35);
 }
 
 .search-toggle {
@@ -287,7 +292,7 @@ nav {
 .search-backdrop {
   position: fixed;
   inset: 0;
-  background: rgba(2, 6, 23, 0.7);
+  background: rgba(4, 3, 2, 0.72);
   z-index: 1400;
 }
 
@@ -301,7 +306,7 @@ nav {
   background: var(--card-bg-solid);
   border: 1px solid var(--border-strong);
   border-radius: var(--radius-md);
-  box-shadow: 0 24px 60px rgba(2, 6, 23, 0.55);
+  box-shadow: 0 24px 60px var(--shadow);
   z-index: 1500;
   display: flex;
   flex-direction: column;
@@ -368,13 +373,13 @@ nav {
 
 .search-result:hover,
 .search-result.active {
-  background: rgba(59, 130, 246, 0.14);
+  background: rgba(198, 161, 91, 0.14);
 }
 
 .search-result strong {
   display: block;
   font-size: 0.92rem;
-  color: #fff;
+  color: #f7f3ea;
   margin-bottom: 0.15rem;
 }
 
@@ -442,7 +447,7 @@ nav {
 
 .oss-card h3 {
   font-size: 1.05rem;
-  color: #fff;
+  color: #f7f3ea;
   margin-bottom: 0.4rem;
 }
 
@@ -458,7 +463,7 @@ nav {
   align-items: center;
   gap: 0.5rem;
   padding: 0.85rem 1.75rem;
-  border-radius: 30px;
+  border-radius: var(--radius-pill);
   text-decoration: none;
   font-weight: 600;
   font-size: 1rem;
@@ -469,18 +474,18 @@ nav {
 
 .btn-primary {
   background: linear-gradient(135deg, var(--primary), var(--secondary));
-  color: #fff;
-  box-shadow: 0 8px 24px rgba(59, 130, 246, 0.3);
+  color: var(--on-accent);
+  box-shadow: 0 8px 24px rgba(198, 161, 91, 0.3);
 }
 
 .btn-primary:hover {
   transform: translateY(-3px);
-  box-shadow: 0 12px 28px rgba(59, 130, 246, 0.45);
+  box-shadow: 0 12px 28px rgba(198, 161, 91, 0.45);
 }
 
 .btn-primary:active {
   transform: translateY(-1px);
-  box-shadow: 0 6px 16px rgba(59, 130, 246, 0.4);
+  box-shadow: 0 6px 16px rgba(198, 161, 91, 0.4);
 }
 
 .btn-outline {
@@ -491,7 +496,7 @@ nav {
 
 .btn-outline:hover {
   border-color: var(--primary);
-  background: rgba(59, 130, 246, 0.1);
+  background: rgba(198, 161, 91, 0.1);
   transform: translateY(-3px);
 }
 
@@ -503,7 +508,7 @@ nav {
 
 .btn-ghost:hover {
   border-color: var(--primary);
-  color: #fff;
+  color: #f7f3ea;
 }
 
 .btn-ghost svg {
@@ -549,11 +554,12 @@ nav {
 }
 
 .hero-content h1 {
-  font-size: clamp(2.2rem, 4.6vw, 3.4rem);
-  font-weight: 800;
-  line-height: 1.15;
+  font-family: var(--font-display);
+  font-size: clamp(2.3rem, 4.8vw, 3.6rem);
+  font-weight: 700;
+  line-height: 1.18;
   margin-bottom: 1.25rem;
-  color: #fff;
+  color: #fdfbf6;
   animation: fadeInUp 0.8s ease-out 0.1s both;
 }
 
@@ -632,8 +638,9 @@ nav {
 .social-links a:hover {
   background: linear-gradient(135deg, var(--primary), var(--secondary));
   border-color: transparent;
+  color: var(--on-accent);
   transform: translateY(-4px);
-  box-shadow: 0 10px 22px rgba(59, 130, 246, 0.35);
+  box-shadow: 0 10px 22px rgba(198, 161, 91, 0.35);
 }
 
 /* Hero visual: node graph */
@@ -650,7 +657,7 @@ nav {
 }
 
 .ng-links line {
-  stroke: rgba(148, 163, 184, 0.25);
+  stroke: rgba(156, 148, 132, 0.28);
   stroke-width: 1;
 }
 
@@ -683,7 +690,7 @@ section {
 }
 
 .section-title {
-  font-family: var(--font-heading);
+  font-family: var(--font-display);
   font-size: clamp(1.9rem, 4vw, 2.6rem);
   font-weight: 700;
   text-align: center;
@@ -747,7 +754,7 @@ section {
   font-size: 1.6rem;
   font-weight: 700;
   margin-bottom: 1.25rem;
-  color: #fff;
+  color: #f7f3ea;
 }
 
 .about-content p {
@@ -821,7 +828,7 @@ section {
   width: 42px;
   height: 42px;
   border-radius: var(--radius-sm);
-  background: rgba(59, 130, 246, 0.12);
+  background: rgba(198, 161, 91, 0.14);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -838,7 +845,7 @@ section {
 .build-card h3 {
   font-size: 1.1rem;
   margin-bottom: 0.5rem;
-  color: #fff;
+  color: #f7f3ea;
 }
 
 .build-card p {
@@ -867,12 +874,12 @@ section {
 .project-card:hover {
   border-color: var(--border-strong);
   transform: translateY(-4px);
-  box-shadow: 0 16px 32px rgba(2, 6, 23, 0.4);
+  box-shadow: 0 16px 32px var(--shadow);
 }
 
 .project-card:active {
   transform: translateY(-1px);
-  box-shadow: 0 8px 18px rgba(2, 6, 23, 0.35);
+  box-shadow: 0 8px 18px var(--shadow);
 }
 
 .project-card-wide {
@@ -889,17 +896,17 @@ section {
 
 .project-card-head h3 {
   font-size: 1.2rem;
-  color: #fff;
+  color: #f7f3ea;
 }
 
 .project-metric {
   font-size: 0.78rem;
   font-weight: 600;
   color: var(--accent);
-  background: rgba(6, 182, 212, 0.12);
-  border: 1px solid rgba(6, 182, 212, 0.3);
+  background: rgba(227, 201, 136, 0.14);
+  border: 1px solid rgba(227, 201, 136, 0.35);
   padding: 0.25rem 0.65rem;
-  border-radius: 20px;
+  border-radius: var(--radius-pill);
   white-space: nowrap;
 }
 
@@ -921,9 +928,9 @@ section {
 .project-tag {
   font-size: 0.8rem;
   padding: 0.3rem 0.7rem;
-  border-radius: 20px;
-  background: rgba(139, 92, 246, 0.12);
-  border: 1px solid rgba(139, 92, 246, 0.28);
+  border-radius: var(--radius-pill);
+  background: rgba(138, 106, 63, 0.18);
+  border: 1px solid rgba(138, 106, 63, 0.38);
   color: var(--light);
 }
 
@@ -1032,16 +1039,16 @@ section {
 
 .experience-card:hover {
   transform: translateX(6px);
-  box-shadow: -4px 8px 24px rgba(2, 6, 23, 0.35);
+  box-shadow: -4px 8px 24px var(--shadow);
 }
 
 .experience-card:active {
   transform: translateX(3px);
-  box-shadow: -2px 4px 14px rgba(2, 6, 23, 0.3);
+  box-shadow: -2px 4px 14px var(--shadow);
 }
 
 .experience-card h3 {
-  color: #fff;
+  color: #f7f3ea;
   font-size: 1.35rem;
   margin-bottom: 0.4rem;
 }
@@ -1135,9 +1142,9 @@ section {
 }
 
 .skill-tag {
-  background: rgba(59, 130, 246, 0.1);
+  background: rgba(198, 161, 91, 0.1);
   padding: 0.4rem 0.85rem;
-  border-radius: 20px;
+  border-radius: var(--radius-pill);
   font-size: 0.85rem;
   border: 1px solid var(--border);
   transition: all 0.25s;
@@ -1145,7 +1152,7 @@ section {
 
 .skill-tag:hover {
   border-color: var(--primary);
-  background: rgba(59, 130, 246, 0.2);
+  background: rgba(198, 161, 91, 0.2);
 }
 
 .skill-tag:active {
@@ -1173,18 +1180,18 @@ section {
 .link-card:hover {
   transform: translateY(-6px);
   border-color: var(--border-strong);
-  box-shadow: 0 12px 28px rgba(2, 6, 23, 0.4);
+  box-shadow: 0 12px 28px var(--shadow);
 }
 
 .link-card:active {
   transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(2, 6, 23, 0.35);
+  box-shadow: 0 6px 16px var(--shadow);
 }
 
 .link-card h3 {
   font-size: 1.15rem;
   margin-bottom: 0.4rem;
-  color: #fff;
+  color: #f7f3ea;
 }
 
 .link-card p {
@@ -1239,25 +1246,25 @@ section {
   display: block;
   width: fit-content;
   background: linear-gradient(135deg, var(--primary), var(--secondary));
-  color: #fff;
+  color: var(--on-accent);
   padding: 0.95rem 2.4rem;
-  border-radius: 30px;
+  border-radius: var(--radius-pill);
   text-decoration: none;
   font-weight: 600;
   font-size: 1.02rem;
   transition: all 0.3s;
-  box-shadow: 0 8px 22px rgba(59, 130, 246, 0.35);
+  box-shadow: 0 8px 22px rgba(198, 161, 91, 0.35);
   margin: 2.5rem auto 0;
 }
 
 .download-btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 12px 28px rgba(59, 130, 246, 0.5);
+  box-shadow: 0 12px 28px rgba(198, 161, 91, 0.5);
 }
 
 .download-btn:active {
   transform: translateY(-1px);
-  box-shadow: 0 6px 16px rgba(59, 130, 246, 0.45);
+  box-shadow: 0 6px 16px rgba(198, 161, 91, 0.45);
 }
 
 /* Footer */
@@ -1309,7 +1316,7 @@ footer p {
   transform: translateY(10px);
   transition: opacity 0.3s, transform 0.3s, visibility 0.3s;
   z-index: 900;
-  box-shadow: 0 8px 20px rgba(2, 6, 23, 0.4);
+  box-shadow: 0 8px 20px var(--shadow);
 }
 
 #scroll-top.show {
@@ -1321,7 +1328,7 @@ footer p {
 #scroll-top svg {
   width: 20px;
   height: 20px;
-  fill: #fff;
+  fill: var(--on-accent);
 }
 
 /* Chat widget */
@@ -1339,7 +1346,7 @@ footer p {
   justify-content: center;
   cursor: pointer;
   z-index: 1300;
-  box-shadow: 0 10px 26px rgba(2, 6, 23, 0.45);
+  box-shadow: 0 10px 26px var(--shadow);
   transition: transform 0.25s;
 }
 
@@ -1354,7 +1361,7 @@ footer p {
 #chatToggle svg {
   width: 24px;
   height: 24px;
-  fill: #fff;
+  fill: var(--on-accent);
   position: absolute;
 }
 
@@ -1387,7 +1394,7 @@ footer p {
   background: var(--card-bg-solid);
   border: 1px solid var(--border-strong);
   border-radius: var(--radius-md);
-  box-shadow: 0 24px 60px rgba(2, 6, 23, 0.55);
+  box-shadow: 0 24px 60px var(--shadow);
   z-index: 1300;
   display: flex;
   flex-direction: column;
@@ -1401,12 +1408,12 @@ footer p {
 .chat-panel-header {
   padding: 1rem 1.1rem;
   border-bottom: 1px solid var(--border);
-  background: rgba(59, 130, 246, 0.08);
+  background: rgba(198, 161, 91, 0.08);
 }
 
 .chat-panel-header strong {
   display: block;
-  color: #fff;
+  color: #f7f3ea;
   font-size: 0.98rem;
   margin-bottom: 0.15rem;
 }
@@ -1435,7 +1442,7 @@ footer p {
 
 .chat-msg-bot {
   align-self: flex-start;
-  background: rgba(148, 163, 184, 0.12);
+  background: rgba(156, 148, 132, 0.14);
   color: var(--light);
   border-bottom-left-radius: 3px;
 }
@@ -1443,7 +1450,7 @@ footer p {
 .chat-msg-user {
   align-self: flex-end;
   background: linear-gradient(135deg, var(--primary), var(--secondary));
-  color: #fff;
+  color: var(--on-accent);
   border-bottom-right-radius: 3px;
 }
 
@@ -1461,8 +1468,8 @@ footer p {
 .chat-quick-replies button {
   font-size: 0.76rem;
   padding: 0.35rem 0.7rem;
-  border-radius: 20px;
-  background: rgba(59, 130, 246, 0.12);
+  border-radius: var(--radius-pill);
+  background: rgba(198, 161, 91, 0.12);
   border: 1px solid var(--border);
   color: var(--light);
   cursor: pointer;
@@ -1487,9 +1494,9 @@ footer p {
 
 .chat-input-row input {
   flex: 1;
-  background: rgba(148, 163, 184, 0.08);
+  background: rgba(156, 148, 132, 0.08);
   border: 1px solid var(--border);
-  border-radius: 20px;
+  border-radius: var(--radius-pill);
   padding: 0.55rem 0.9rem;
   color: var(--light);
   font-size: 0.88rem;
@@ -1516,7 +1523,7 @@ footer p {
 .chat-input-row button svg {
   width: 16px;
   height: 16px;
-  fill: #fff;
+  fill: var(--on-accent);
 }
 
 .chat-input-row button:active {
