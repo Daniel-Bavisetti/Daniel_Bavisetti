@@ -118,7 +118,7 @@
   var typedTarget = document.getElementById('typed-roles');
   if (typedTarget && !prefersReducedMotion && typeof Typed !== 'undefined') {
     new Typed('#typed-roles', {
-      strings: ['Computer Vision', 'Generative AI &amp; NLP', 'ML-Powered Backends', 'MLOps &amp; Deployment'],
+      strings: ['Computer Vision', 'Generative AI', 'Applied NLP', 'ML Systems', 'AI Engineering'],
       typeSpeed: 45,
       backSpeed: 25,
       backDelay: 1800,
